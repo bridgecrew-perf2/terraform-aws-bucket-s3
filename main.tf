@@ -1,5 +1,4 @@
-resource "null_resource" "this" {
-  provisioner "remote-exe" {
-    inline = [echo null]
-  } 
+resource "aws_s3_bucket" "examplebucket" {
+  bucket = "examplebuckettftest"
+  acl    = "private"
 }
